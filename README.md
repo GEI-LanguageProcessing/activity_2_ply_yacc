@@ -4,7 +4,7 @@ Para probar el programa en C:
 
 1. Compilar el programa:
 ```bash
-$ make all
+$ make
 ```
 
 2. Ejecutar el programa pasando un archivo de prueba (por ejemplo, `test.txt`):
