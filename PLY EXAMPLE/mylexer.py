@@ -1,6 +1,6 @@
 import ply.lex as lex
 
-# Llista de tokens
+# Lista de tokens
 tokens = (
     'INTEGER',
     'PLUS',
@@ -24,7 +24,12 @@ def t_INTEGER(t):
     t.value = int(t.value)
     return t
 
-# Gestió d'errors
+# Guardar número de línea
+def t_newline(t):
+    r'\n+'
+    t.lexer.lineno += len(t.value)
+    
+# Gestión de errores
 def t_error(t):
     print("Illegal character '%s'" % t.value[0])
 
