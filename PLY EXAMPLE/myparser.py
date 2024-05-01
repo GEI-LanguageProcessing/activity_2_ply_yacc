@@ -29,8 +29,7 @@ def p_expr(p):
         p[0] = p[1]
 
 def p_error(p):
-    print("Syntax error in input!")
+    print(f"Error linea {p.lineno}")
 
 # Construcción del parser
 parser = yacc.yacc()
-
