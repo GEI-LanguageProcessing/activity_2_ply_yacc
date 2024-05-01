@@ -2,7 +2,7 @@
 ## Unix C
 Para probar el programa en C:
 
-1. Compilar el programa:
+1. Compilar el programa mediante el archivo `Makefile` proporcionado:
 ```bash
 $ make
 ```
